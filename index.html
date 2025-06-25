@@ -87,75 +87,75 @@
         }
         .sf-header {
             background-color: #ffffff;
-            padding: 1.5rem 2.5rem; /* Increased padding */
+            padding: 1rem 1.5rem; /* Reduced padding */
             border-bottom: 1px solid #d8dde6;
             display: flex;
             align-items: center;
-            gap: 1.25rem; /* Increased gap */
+            gap: 0.75rem; /* Reduced gap */
         }
         .sf-header-icon {
             background-color: #0070d2; /* Blue icon background */
             color: #ffffff;
             border-radius: 0.25rem;
-            width: 3.5rem; /* Increased size */
-            height: 3.5rem; /* Increased size */
+            width: 2.5rem; /* Reduced size */
+            height: 2.5rem; /* Reduced size */
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            font-size: 1.75rem; /* Increased font size */
+            font-size: 1.25rem; /* Reduced font size */
         }
         .sf-header-title {
-            font-size: 2rem; /* Increased font size */
+            font-size: 1.5rem; /* Reduced font size */
             font-weight: 600;
             color: #16325c;
         }
         .sf-body {
-            padding: 2.5rem; /* Increased padding */
+            padding: 1.5rem; /* Reduced padding */
             display: grid;
             grid-template-columns: 1fr; /* Default to 1 column for small screens */
-            gap: 2rem; /* Increased gap */
+            gap: 1.5rem; /* Reduced gap */
         }
         @media (min-width: 768px) { /* md breakpoint */
             .sf-body {
-                grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens and up */
+                grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 columns for medium screens and up, adjusted minmax */
             }
         }
         .sf-field-group {
             background-color: #ffffff;
             border-radius: 0.25rem;
             border: 1px solid #e0e0e0;
-            padding: 1.25rem; /* Increased padding */
+            padding: 0.8rem; /* Reduced padding */
         }
         .sf-field-label {
-            font-size: 0.9rem; /* Increased font size */
+            font-size: 0.7rem; /* Reduced font size */
             color: #6a6e73;
             text-transform: uppercase;
-            margin-bottom: 0.35rem; /* Adjusted margin */
+            margin-bottom: 0.25rem; /* Adjusted margin */
             font-weight: 500;
         }
         .sf-field-value {
-            font-size: 1.1rem; /* Increased font size */
+            font-size: 0.9rem; /* Reduced font size */
             color: #181b23;
             font-weight: 400;
         }
         .sf-related-list {
             background-color: #ffffff;
             border-top: 1px solid #d8dde6;
-            padding: 1.5rem 2.5rem; /* Increased padding */
+            padding: 1rem 1.5rem; /* Reduced padding */
         }
         .sf-related-list-title {
-            font-size: 1.4rem; /* Increased font size */
+            font-size: 1.1rem; /* Reduced font size */
             font-weight: 600;
             color: #16325c;
-            margin-bottom: 1.25rem; /* Increased margin */
+            margin-bottom: 1rem; /* Reduced margin */
         }
         .sf-button {
             background-color: #0070d2;
             color: white;
-            padding: 0.75rem 1.25rem; /* Increased padding */
+            padding: 0.6rem 1rem; /* Reduced padding */
             border-radius: 0.25rem;
-            font-size: 1rem; /* Increased font size */
+            font-size: 0.85rem; /* Reduced font size */
             font-weight: 500;
             cursor: pointer;
             transition: background-color 0.2s ease;
@@ -166,10 +166,10 @@
         }
         .sf-actions {
             background-color: #ffffff;
-            padding: 1.5rem 2.5rem; /* Increased padding */
+            padding: 1rem 1.5rem; /* Reduced padding */
             border-bottom: 1px solid #d8dde6;
             display: flex;
-            gap: 0.75rem; /* Increased gap */
+            gap: 0.5rem; /* Reduced gap */
             justify-content: flex-start;
         }
         .impact-metric {
@@ -216,12 +216,12 @@
             object-fit: contain; /* Ensures image aspect ratio is maintained */
         }
 
-        /* New Styles for Object Record Cards (x2 size, bubble grid) */
+        /* New Styles for Object Record Cards (now reduced) */
         .object-record-card {
             background-color: #ffffff; /* Card background */
-            border-radius: 1rem; /* More rounded for "bubble" effect */
-            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15), 0 5px 10px -5px rgba(0, 0, 0, 0.08); /* Stronger shadow */
-            padding: 2rem; /* Increased padding for x2 size feel */
+            border-radius: 0.75rem; /* Reduced border-radius */
+            box-shadow: 0 5px 10px -2.5px rgba(0, 0, 0, 0.15), 0 2.5px 5px -2.5px rgba(0, 0, 0, 0.08); /* Reduced shadow */
+            padding: 1.25rem; /* Reduced padding */
             display: flex;
             flex-direction: column;
             height: 100%; /* Ensure cards are same height in a row */
@@ -583,7 +583,7 @@
                 <h3>5. Mark Invoice Paid Screen Flow</h3>
                 <p>Activated via the “Mark Paid” button on the Invoice record, this flow updates the status of both the Invoice and all linked monthly schedules to “Paid.” It also populates the Date Paid field on all related Service Element records, ensuring accurate downstream reporting.</p>
                 <div class="flow-diagram-container">
-                    <img src="Mark Invoice Paid Screen Flow.PNG" alt="Mark Invoice Paid Screen Flow Diagram">
+                    <img src="Schema Relationship.png" alt="Mark Invoice Paid Screen Flow Diagram">
                 </div>
             </div>
         </div>
@@ -591,7 +591,7 @@
         <h2>Schema Relationship</h2>
         <p>The following diagram illustrates the relationships between the custom objects implemented in this solution, highlighting how data flows and connects across the invoicing automation system.</p>
         <div class="flow-diagram-container">
-            <img src="Schema Relationship.PNG" alt="Salesforce Schema Relationship Diagram">
+            <img src="Schema Relationship.png" alt="Salesforce Schema Relationship Diagram">
         </div>
 
         <h2>Key Results & Impact</h2>
