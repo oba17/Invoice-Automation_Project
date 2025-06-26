@@ -87,75 +87,75 @@
         }
         .sf-header {
             background-color: #ffffff;
-            padding: 1rem 1.5rem; /* Reduced padding */
+            padding: 0.7rem 1.05rem; /* Reduced padding by 30% (was 1rem 1.5rem) */
             border-bottom: 1px solid #d8dde6;
             display: flex;
             align-items: center;
-            gap: 0.75rem; /* Reduced gap */
+            gap: 0.525rem; /* Reduced gap by 30% (was 0.75rem) */
         }
         .sf-header-icon {
             background-color: #0070d2; /* Blue icon background */
             color: #ffffff;
             border-radius: 0.25rem;
-            width: 2.5rem; /* Reduced size */
-            height: 2.5rem; /* Reduced size */
+            width: 1.75rem; /* Reduced size by 30% (was 2.5rem) */
+            height: 1.75rem; /* Reduced size by 30% (was 2.5rem) */
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            font-size: 1.25rem; /* Reduced font size */
+            font-size: 0.875rem; /* Reduced font size by 30% (was 1.25rem) */
         }
         .sf-header-title {
-            font-size: 1.5rem; /* Reduced font size */
+            font-size: 1.05rem; /* Reduced font size by 30% (was 1.5rem) */
             font-weight: 600;
             color: #16325c;
         }
         .sf-body {
-            padding: 1.5rem; /* Reduced padding */
+            padding: 1.05rem; /* Reduced padding by 30% (was 1.5rem) */
             display: grid;
             grid-template-columns: 1fr; /* Default to 1 column for small screens */
-            gap: 1.5rem; /* Reduced gap */
+            gap: 1.05rem; /* Reduced gap by 30% (was 1.5rem) */
         }
         @media (min-width: 768px) { /* md breakpoint */
             .sf-body {
-                grid-template-columns: repeat(2, minmax(200px, 1fr)); /* 2 columns for medium screens and up, adjusted minmax */
+                grid-template-columns: repeat(2, minmax(140px, 1fr)); /* Reduced minmax by 30% (was 200px) */
             }
         }
         .sf-field-group {
             background-color: #ffffff;
             border-radius: 0.25rem;
             border: 1px solid #e0e0e0;
-            padding: 0.8rem; /* Reduced padding */
+            padding: 0.56rem; /* Reduced padding by 30% (was 0.8rem) */
         }
         .sf-field-label {
-            font-size: 0.7rem; /* Reduced font size */
+            font-size: 0.49rem; /* Reduced font size by 30% (was 0.7rem) */
             color: #6a6e73;
             text-transform: uppercase;
-            margin-bottom: 0.25rem; /* Adjusted margin */
+            margin-bottom: 0.175rem; /* Adjusted margin by 30% (was 0.25rem) */
             font-weight: 500;
         }
         .sf-field-value {
-            font-size: 0.9rem; /* Reduced font size */
+            font-size: 0.63rem; /* Reduced font size by 30% (was 0.9rem) */
             color: #181b23;
             font-weight: 400;
         }
         .sf-related-list {
             background-color: #ffffff;
             border-top: 1px solid #d8dde6;
-            padding: 1rem 1.5rem; /* Reduced padding */
+            padding: 0.7rem 1.05rem; /* Reduced padding by 30% (was 1rem 1.5rem) */
         }
         .sf-related-list-title {
-            font-size: 1.1rem; /* Reduced font size */
+            font-size: 0.77rem; /* Reduced font size by 30% (was 1.1rem) */
             font-weight: 600;
             color: #16325c;
-            margin-bottom: 1rem; /* Reduced margin */
+            margin-bottom: 0.7rem; /* Reduced margin by 30% (was 1rem) */
         }
         .sf-button {
             background-color: #0070d2;
             color: white;
-            padding: 0.6rem 1rem; /* Reduced padding */
+            padding: 0.42rem 0.7rem; /* Reduced padding by 30% (was 0.6rem 1rem) */
             border-radius: 0.25rem;
-            font-size: 0.85rem; /* Reduced font size */
+            font-size: 0.595rem; /* Reduced font size by 30% (was 0.85rem) */
             font-weight: 500;
             cursor: pointer;
             transition: background-color 0.2s ease;
@@ -166,10 +166,10 @@
         }
         .sf-actions {
             background-color: #ffffff;
-            padding: 1rem 1.5rem; /* Reduced padding */
+            padding: 0.7rem 1.05rem; /* Reduced padding by 30% (was 1rem 1.5rem) */
             border-bottom: 1px solid #d8dde6;
             display: flex;
-            gap: 0.5rem; /* Reduced gap */
+            gap: 0.35rem; /* Reduced gap by 30% (was 0.5rem) */
             justify-content: flex-start;
         }
         .impact-metric {
@@ -177,7 +177,7 @@
             color: #2f855a; /* Green for positive impact */
         }
 
-        /* Styles for Flow Automation Cards (renamed for clarity) */
+        /* Styles for Flow Automation Cards (unchanged in this request) */
         .automation-flow-card {
             background-color: #ffffff;
             border-radius: 0.75rem; /* rounded-xl */
@@ -216,12 +216,12 @@
             object-fit: contain; /* Ensures image aspect ratio is maintained */
         }
 
-        /* New Styles for Object Record Cards (now reduced) */
+        /* Styles for Object Record Cards (now reduced) */
         .object-record-card {
             background-color: #ffffff; /* Card background */
             border-radius: 0.75rem; /* Reduced border-radius */
-            box-shadow: 0 5px 10px -2.5px rgba(0, 0, 0, 0.15), 0 2.5px 5px -2.5px rgba(0, 0, 0, 0.08); /* Reduced shadow */
-            padding: 1.25rem; /* Reduced padding */
+            box-shadow: 0 3.5px 7px -1.75px rgba(0, 0, 0, 0.15), 0 1.75px 3.5px -1.75px rgba(0, 0, 0, 0.08); /* Reduced shadow by 30% */
+            padding: 0.875rem; /* Reduced padding by 30% (was 1.25rem) */
             display: flex;
             flex-direction: column;
             height: 100%; /* Ensure cards are same height in a row */
@@ -232,11 +232,27 @@
             background-color: #f4f6f9; /* Restore Salesforce background for the inner content */
             height: 100%; /* Ensure inner content fills wrapper */
         }
+
+        /* Schema Relationship Diagram Container */
+        .schema-diagram-container {
+            background-color: #f0f0f0;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            overflow-x: auto; /* Enable horizontal scrolling for wide diagrams */
+            text-align: center; /* Center the image if it's smaller than container */
+        }
+        .schema-diagram-container img {
+            max-width: 70%; /* Reduced by 30% (was 100%) */
+            height: auto;
+            display: inline-block; /* Allows centering with text-align */
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Invoicing Automation System</h1>
+        <h1 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Invoicing Automation System</h1>
 
         <div class="mb-6">
             <span class="tag">Salesforce Automation</span>
@@ -246,10 +262,12 @@
             <span class="tag">Financial Operations</span>
         </div>
 
-        <h2>Business Need Summary</h2>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Business Need Summary</h2>
         <p>The organization, funded by government and private entities to run programs helping targeted populations, faced significant challenges with manual invoicing. Each client service generated a billable amount, compiled monthly via error-prone Excel reports for Finance. This process led to errors, inconsistencies, and inefficiencies. A critical need existed for an automated solution to streamline invoice generation, minimize human error, improve inter-team collaboration, and centralize all invoicing records within Salesforce, eliminating reliance on fragmented tools and spreadsheets.</p>
-
-        <h2>Solution Design Summary: Invoicing Automation System</h2>
+<p> 
+    
+</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Solution Design Summary: Invoicing Automation System</h2>
         <p>To overcome manual invoicing, error-prone spreadsheets, and fragmented data, I designed and implemented a comprehensive Salesforce-based invoicing automation solution using multiple custom objects, automation tools, and approval processes.</p>
         
         <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Custom Object Wireframes (Record Pages)</h2>
@@ -537,7 +555,9 @@
                 </div>
             </div>
         </div>
-
+<p> 
+    
+</p>
         <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Automation Summary: Invoicing System Process Flows</h2>
         <p class="mb-6">To support the end-to-end invoicing process, I built five key Salesforce Screen Flows that automate program scheduling, budget tracking, invoice generation, and payment updates. These automations ensure accuracy, reduce manual work, and improve real-time financial tracking.</p>
 
@@ -583,18 +603,22 @@
                 <h3>5. Mark Invoice Paid Screen Flow</h3>
                 <p>Activated via the “Mark Paid” button on the Invoice record, this flow updates the status of both the Invoice and all linked monthly schedules to “Paid.” It also populates the Date Paid field on all related Service Element records, ensuring accurate downstream reporting.</p>
                 <div class="flow-diagram-container">
-                    <img src="Mark Invoice Paid Flow.png" alt="Mark Invoice Paid Screen Flow Diagram">
+                    <img src="Mark Invoice Paid Screen Flow.PNG" alt="Mark Invoice Paid Screen Flow Diagram">
                 </div>
             </div>
         </div>
-
-        <h2>Schema Relationship</h2>
+<p> 
+    
+</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Schema Relationship</h2>
         <p>The following diagram illustrates the relationships between the custom objects implemented in this solution, highlighting how data flows and connects across the invoicing automation system.</p>
-        <div class="flow-diagram-container">
-            <img src="Schema Relationship.png" alt="Salesforce Schema Relationship Diagram">
+        <div class="schema-diagram-container">
+            <img src="Schema Relationship.PNG" alt="Salesforce Schema Relationship Diagram">
         </div>
-
-        <h2>Key Results & Impact</h2>
+<p> 
+    
+</p>
+        <h2 class="text-2xl font-semibold text-gray-800 mt-8 mb-4">Key Results & Impact</h2>
         <p>This comprehensive redesign and automation of the invoicing process yielded significant improvements:</p>
         <ul>
             <li><span class="impact-metric">42% improvement in data accuracy</span> across invoicing records.</li>
